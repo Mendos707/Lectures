@@ -1,20 +1,23 @@
+number = []
 
 
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        i = 'FizzBuzz'
+    elif i % 3 == 0:
+        i = 'Fizz'
+    elif i % 5 == 0:
+        i = 'Buzz'
+    number.append(i)
 
-for i in range(1,101):
-    fizz = i % 3
-    buss = i % 5
-    fizz = []
-    buss = []
-    fizzbuss = []
-    # if buss == 0:
-    #     busslist.append(i)
-    #     print(busslist)
 
-    # if fizz == 0:
-    #     fizzlist = []
-    #     fizzlist.append(i)
-    #     print(fizzlist)
-    if buss == 0 and fizz == 0:
-        fizzbuss.append(i)
-        print(fizzbuss)
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        i = 'FizzBuzz'
+    elif i % 3 == 0:
+        i = 'Fizz'
+    elif i % 5 == 0:
+        i = 'Buzz'
+    print(i)
+
+print(number)
