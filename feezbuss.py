@@ -1,6 +1,6 @@
 number = []
 
-
+### List attempt ###
 for i in range(1, 101):
     if i % 3 == 0 and i % 5 == 0:
         i = 'FizzBuzz'
@@ -10,6 +10,8 @@ for i in range(1, 101):
         i = 'Buzz'
     number.append(i)
 
+
+### Normal attempt ###
 
 for i in range(1, 101):
     if i % 3 == 0 and i % 5 == 0:
