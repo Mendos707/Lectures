@@ -55,7 +55,16 @@ def tupple_merge():
 
 def most_popular():
     list1 = [1, 2, 4, 6, 4, 6]
-    print(list1.count())
+    print(max(set(list1), key = list1.count))
 
-most_popular()
+
+def seconds():
+    sec_value = int(input('Please insert value: '))
+    a = sec_value % 60
+    b = sec_value//60 % 60
+    c = sec_value//3600 % 24
+    d = sec_value//86400
+    print(f'{d}:{c}:{b}:{a}')
+
+seconds()
 
