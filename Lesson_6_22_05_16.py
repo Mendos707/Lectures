@@ -9,19 +9,19 @@ def menu():
                         '6.Most_popular\n'
                         '7.Seconds\n'
                         '--> ')
-    if user_choice == 1:
+    if user_choice == '1':
         say_hello()
-    elif user_choice == 2:
+    elif user_choice == '2':
         hypotenuse()
-    elif user_choice == 3:
+    elif user_choice == '3':
         triangle()
-    elif user_choice == 4:
+    elif user_choice == '4':
         random_list()
-    elif user_choice == 5:
+    elif user_choice == '5':
         tupple_merge()
-    elif user_choice == 6:
+    elif user_choice == '6':
         most_popular()
-    elif user_choice == 7:
+    elif user_choice == '7':
         seconds()
 
 def say_hello():
