@@ -1,15 +1,28 @@
 
 def menu():
-    user_choice = input('Please choose:\n'
-                        '1.Say hello\n'
-                        '2.Get date of birth\n'
-                        '3.Get region of bith\n'
-                        '4.Validate ID\n'
-                        '5.Change ID\n'
-                        '0.Exit\n'
-                        '--> ')
-    if user_choice == 1:
-        say_hello()
+        user_choice = input('Please choose:\n'
+                            '1.Say hello\n'
+                            '2.Hypotenuse\n'
+                            '3.Triangle\n'
+                            '4.Random_list\n'
+                            '5.Tupple_merge\n'
+                            '6.Most_popular\n'
+                            '7.Seconds\n'
+                            '--> ')
+        if user_choice == 1:
+            say_hello()
+        elif user_choice == 2:
+            hypotenuse()
+        elif user_choice == 3:
+            triangle()
+        elif user_choice == 4:
+            random_list()
+        elif user_choice == 5:
+            tupple_merge()
+        elif user_choice == 6:
+            most_popular()
+        elif user_choice == 7:
+            seconds()
 
 def say_hello():
     name = input('Please insert your name: ').capitalize()
@@ -66,5 +79,5 @@ def seconds():
     d = sec_value//86400
     print(f'{d}:{c}:{b}:{a}')
 
-seconds()
+menu()
 
