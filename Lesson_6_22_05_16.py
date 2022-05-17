@@ -9,6 +9,7 @@ def menu():
                             '5.Tupple_merge\n'
                             '6.Most_popular\n'
                             '7.Seconds\n'
+                            '0.Exit\n'
                             '--> ')
         if user_choice == '1':
             say_hello()
@@ -24,6 +25,9 @@ def menu():
             most_popular()
         elif user_choice == '7':
             seconds()
+        elif user_choice == '0':
+            exit()
+
 
 def say_hello():
     name = input('Please insert your name: ').capitalize()
